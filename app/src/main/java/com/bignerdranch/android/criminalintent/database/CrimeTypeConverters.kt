@@ -15,6 +15,7 @@ class CrimeTypeConverters {
             Date(it)
         }
     }
+
     @TypeConverter
     fun toUUID(uuid: String?): UUID? {
         return UUID.fromString(uuid)
